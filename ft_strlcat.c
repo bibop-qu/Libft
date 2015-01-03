@@ -6,14 +6,14 @@
 /*   By: basle-qu <basle-qu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/01/02 15:18:24 by basle-qu          #+#    #+#             */
-/*   Updated: 2015/01/02 18:24:46 by basle-qu         ###   ########.fr       */
+/*   Updated: 2015/01/03 20:17:21 by basle-qu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdlib.h>
 #include <string.h>
 
-static size_t		ft_strlen(const char *s)
+static size_t	ft_strlen(const char *s)
 {
 	size_t		len;
 
@@ -23,7 +23,7 @@ static size_t		ft_strlen(const char *s)
 	return (len);
 }
 
-size_t	ft_strlcat(char *dst, const char *src, size_t size)
+size_t			ft_strlcat(char *dst, const char *src, size_t size)
 {
 	size_t		c;
 	size_t		i;
@@ -37,7 +37,7 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size)
 	while ((i + c) < size - 1)
 	{
 		dst[i + c] = src[c];
-		c++; 
+		c++;
 	}
 	dst[i + c] = '\0';
 	return (i + j);

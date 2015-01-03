@@ -6,17 +6,17 @@
 /*   By: basle-qu <basle-qu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/01/02 17:20:48 by basle-qu          #+#    #+#             */
-/*   Updated: 2015/01/02 17:20:50 by basle-qu         ###   ########.fr       */
+/*   Updated: 2015/01/03 20:18:18 by basle-qu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 #include <stdlib.h>
 
-static int		ft_count(const char *s, char c)
+static int	ft_count(const char *s, char c)
 {
-	int		i;
-	int 	counter;
+	int	i;
+	int counter;
 
 	counter = 0;
 	i = 0;
