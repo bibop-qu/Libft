@@ -6,14 +6,14 @@
 /*   By: basle-qu <basle-qu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/11 17:58:59 by basle-qu          #+#    #+#             */
-/*   Updated: 2015/01/02 16:49:37 by basle-qu         ###   ########.fr       */
+/*   Updated: 2015/01/08 16:23:39 by basle-qu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdlib.h>
 #include <string.h>
 
-char	*ft_strsub(char const *s, unsigned int start, size_t len)
+char			*ft_strsub(char const *s, unsigned int start, size_t len)
 {
 	size_t	i;
 	char	*cpy;

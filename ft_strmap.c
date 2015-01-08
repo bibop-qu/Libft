@@ -6,7 +6,7 @@
 /*   By: basle-qu <basle-qu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/10 16:06:18 by basle-qu          #+#    #+#             */
-/*   Updated: 2014/11/18 10:20:45 by basle-qu         ###   ########.fr       */
+/*   Updated: 2015/01/08 16:08:24 by basle-qu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,9 +29,11 @@ char				*ft_strmap(char const *s, char (*f)(char))
 	char				*new;
 
 	i = 0;
+	if (!s || !f)
+		return (NULL);
 	new = (char*)malloc(sizeof(char) * ft_strlen(s) + 1);
-	if (!s || !new)
-		return (0);
+	if (!new)
+		return (NULL);
 	while (s[i])
 	{
 		new[i] = f(s[i]);
