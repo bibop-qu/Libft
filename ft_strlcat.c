@@ -6,22 +6,13 @@
 /*   By: basle-qu <basle-qu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/01/02 15:18:24 by basle-qu          #+#    #+#             */
-/*   Updated: 2015/01/03 20:17:21 by basle-qu         ###   ########.fr       */
+/*   Updated: 2015/01/14 20:45:37 by basle-qu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdlib.h>
 #include <string.h>
-
-static size_t	ft_strlen(const char *s)
-{
-	size_t		len;
-
-	len = 0;
-	while (s[len])
-		len++;
-	return (len);
-}
+#include "libft.h"
 
 size_t			ft_strlcat(char *dst, const char *src, size_t size)
 {

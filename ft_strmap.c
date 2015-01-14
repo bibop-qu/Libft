@@ -6,22 +6,11 @@
 /*   By: basle-qu <basle-qu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/10 16:06:18 by basle-qu          #+#    #+#             */
-/*   Updated: 2015/01/08 16:08:24 by basle-qu         ###   ########.fr       */
+/*   Updated: 2015/01/14 20:50:37 by basle-qu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
-#include <string.h>
-
-static size_t		ft_strlen(const char *s)
-{
-	size_t		len;
-
-	len = 0;
-	while (s[len])
-		len++;
-	return (len);
-}
+#include "libft.h"
 
 char				*ft_strmap(char const *s, char (*f)(char))
 {

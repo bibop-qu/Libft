@@ -6,47 +6,11 @@
 /*   By: basle-qu <basle-qu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/11 18:01:50 by basle-qu          #+#    #+#             */
-/*   Updated: 2015/01/02 15:13:35 by basle-qu         ###   ########.fr       */
+/*   Updated: 2015/01/14 20:52:10 by basle-qu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
-#include <stdlib.h>
-
-static size_t		ft_strlen(const char *s)
-{
-	size_t		len;
-
-	len = 0;
-	while (s[len])
-		len++;
-	return (len);
-}
-
-static void			*ft_memalloc(size_t size)
-{
-	size_t		i;
-	void		*new;
-
-	i = 0;
-	new = malloc(size);
-	if (!new)
-		return (0);
-	while (i < size)
-	{
-		((char*)new)[i] = 0;
-		i++;
-	}
-	return (new);
-}
-
-static char			*ft_strnew(size_t size)
-{
-	char	*new;
-
-	new = (char*)ft_memalloc(size + 1);
-	return (new);
-}
+#include "libft.h"
 
 char				*ft_strtrim(char const *s)
 {

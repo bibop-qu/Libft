@@ -6,22 +6,11 @@
 /*   By: basle-qu <basle-qu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/10 18:49:37 by basle-qu          #+#    #+#             */
-/*   Updated: 2014/11/18 09:58:43 by basle-qu         ###   ########.fr       */
+/*   Updated: 2015/01/14 20:44:05 by basle-qu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
-#include <string.h>
-
-static size_t	ft_strlen(const char *s)
-{
-	size_t		len;
-
-	len = 0;
-	while (s[len])
-		len++;
-	return (len);
-}
+#include "libft.h"
 
 char			*ft_strdup(const char *s1)
 {

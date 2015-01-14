@@ -6,9 +6,11 @@
 /*   By: basle-qu <basle-qu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/10 18:54:21 by basle-qu          #+#    #+#             */
-/*   Updated: 2014/11/10 18:54:46 by basle-qu         ###   ########.fr       */
+/*   Updated: 2015/01/14 20:44:41 by basle-qu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 char	*ft_strcpy(char *dst, const char *src)
 {

@@ -6,23 +6,11 @@
 /*   By: basle-qu <basle-qu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/18 09:44:47 by basle-qu          #+#    #+#             */
-/*   Updated: 2015/01/03 20:16:14 by basle-qu         ###   ########.fr       */
+/*   Updated: 2015/01/14 20:48:25 by basle-qu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-static int	ft_isprint(int c)
-{
-	if (c >= 32 && c <= 126)
-		return (1);
-	return (0);
-}
-
-static int	ft_isdigit(int c)
-{
-	if (c > 47 && c < 58)
-		return (1);
-	return (0);
-}
+#include "libft.h"
 
 int			ft_atoi(const char *str)
 {

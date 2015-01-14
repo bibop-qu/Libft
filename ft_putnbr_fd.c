@@ -6,16 +6,11 @@
 /*   By: basle-qu <basle-qu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/10 14:52:27 by basle-qu          #+#    #+#             */
-/*   Updated: 2015/01/02 16:40:25 by basle-qu         ###   ########.fr       */
+/*   Updated: 2015/01/14 20:55:01 by basle-qu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
-
-static void	ft_putchar_fd(char c, int fd)
-{
-	write(fd, &c, 1);
-}
+#include "libft.h"
 
 void		ft_putnbr_fd(int n, int fd)
 {
